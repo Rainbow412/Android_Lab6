@@ -56,17 +56,17 @@
             android:id="@+id/play_pause"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="play" />
+            android:text="@string/play_button" />
         <Button
             android:id="@+id/stop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="stop" />
+            android:text="@string/stop_button" />
         <Button
             android:id="@+id/quit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="quit" />
+            android:text="@string/quit_button" />
     </LinearLayout>
 
 

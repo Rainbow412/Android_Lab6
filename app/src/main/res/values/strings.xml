@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Lab6</string>
+    
+    <string name="play_button">play</string>
+    <string name="stop_button">stop</string>
+    <string name="quit_button">quit</string>
 </resources>

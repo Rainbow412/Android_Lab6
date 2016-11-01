@@ -11,16 +11,14 @@
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="319dp"
+        android:layout_height="300dp"
         android:src="@mipmap/image"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.70" />
+        android:layout_gravity="center_horizontal" />
     <TextView
         android:id="@+id/state"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Paused"
         android:layout_marginBottom="@dimen/state_margin"/>
 
     <LinearLayout
@@ -28,22 +26,22 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:id="@+id/time2begin"
+            android:id="@+id/time1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="00:00"/>
-
         <SeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/seekBar"
             android:layout_weight="0.60" />
-
         <TextView
-            android:id="@+id/time2end"
+            android:id="@+id/time2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="00:00"/>
+
+
     </LinearLayout>
 
     <LinearLayout

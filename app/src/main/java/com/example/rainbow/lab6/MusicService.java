@@ -12,12 +12,10 @@ import android.util.Log;
 
 public class MusicService extends Service{
 
-
     public final IBinder binder = new MyBinder();
     public class MyBinder extends Binder{
         @Override
-        protected  boolean onTransact(int code, Parcel data,
-                                      Parcel reply, int flags)
+        protected  boolean onTransact(int code, Parcel data, Parcel reply, int flags)
                 throws RemoteException{
             switch (code){
                 case 100:
@@ -68,31 +66,28 @@ public class MusicService extends Service{
     private static MediaPlayer mp = new MediaPlayer();
     public MusicService(){
         try{
-            //mp.setDataSource("/data/K.Will-Melt.mp3");
             mp.setDataSource("/storage/emulated/0/K.Will-Melt.mp3");
             mp.prepare();
             mp.setLooping(true);
         } catch (Exception e){
             e.printStackTrace();
         }
-
     }
 
     private void play(){
          if(!mp.isPlaying()){
-            mp.start();
+            mp.start(); //开始播放
         }
     }
 
     private void pause(){
         if(mp.isPlaying()){
-            mp.pause();
+            mp.pause(); //暂停播放
         }
     }
     private void stop(){
         if(mp != null){
-            mp.stop();
-//            flag = true;
+            mp.stop(); //停止播放
             try {
                 mp.prepare();
                 mp.seekTo(0);
@@ -101,7 +96,4 @@ public class MusicService extends Service{
             }
         }
     }
-
-
-
 }
